@@ -20,7 +20,7 @@ services:
     build:
       context: .
       args:
-        ALPINE_VERSION: "3.16"
+        ALPINE_VERSION: "3.20"
     environment:
       SCHEDULE: ${SCHEDULE} # optional
       BACKUP_KEEP_DAYS: 7 # optional

@@ -9,7 +9,7 @@ apk update
 apk del postgresql-client || true
 
 # Install pg_dump version 16
-apk add postgresql16-client
+apk add postgresql-client-16
 
 # Install gpg
 apk add gnupg
