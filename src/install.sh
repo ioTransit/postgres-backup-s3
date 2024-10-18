@@ -6,7 +6,7 @@ set -o pipefail
 apk update
 
 # install pg_dump
-apk add postgresql-client
+apk add postgresql16-client
 
 # install gpg
 apk add gnupg
@@ -21,7 +21,6 @@ rm go-cron_0.0.5_linux_${TARGETARCH}.tar.gz
 mv go-cron /usr/local/bin/go-cron
 chmod u+x /usr/local/bin/go-cron
 apk del curl
-
 
 # cleanup
 rm -rf /var/cache/apk/*
