@@ -19,7 +19,6 @@ services:
   backup:
     build:
       context: .
-      dockerfile: Dockerfile.backup # Assuming there's a Dockerfile named Dockerfile.backup
       args:
         ALPINE_VERSION: "3.16"
     environment:
